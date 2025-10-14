@@ -4,3 +4,390 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* === Global Styles === */
+:root {
+  --sage: #A8C686;
+  --terracotta: #D77A61;
+  --cream: #FFF8E7;
+  --charcoal: #333333;
+  --light-gray: #E0E0E0;
+  --off-white: #FAFAFA;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--charcoal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+
+/* === Header === */
+.header {
+  width: 100%;
+  background-color: var(--cream);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  display: block;
+  height: 3px;
+  background-color: var(--charcoal);
+  border-radius: 2px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+/* === Logo Images === */
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+.footer-logo {
+  height: 100px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* === Hero Section === */
+.hero {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: var(--light-gray);
+}
+
+/* === Intro Message === */
+.intro {
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--cream);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+/* === Search + Filters === */
+.search-section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 25px;
+  outline: none;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.sort-btn {
+  background-color: var(--sage);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filter-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter {
+  background-color: white;
+  border: 1px solid var(--sage);
+  color: var(--charcoal);
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter:hover {
+  background-color: var(--sage);
+  color: white;
+}
+
+/* === Recipe List === */
+.recipe-list {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipe-card {
+  background-color: var(--cream);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.recipe-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background-color: var(--light-gray);
+}
+
+.recipe-content {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.recipe-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.recipe-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.recipe-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+/* === Help Button === */
+.help-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--terracotta);
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* === Footer === */
+.footer {
+  width: 100%;
+  background-color: var(--cream);
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--light-gray);
+  font-size: 0.9rem;
+}
+
+/* === Recipe Page Specific === */
+.recipe-header {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.recipe-hero-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: var(--light-gray);
+  margin-bottom: 1rem;
+}
+
+.recipe-info {
+  padding: 0.5rem 0;
+}
+
+.recipe-info .recipe-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.recipe-info .recipe-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.recipe-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal);
+}
+
+.recipe-box {
+  background-color: var(--cream);
+  border: 1px solid var(--light-gray);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.recipe-box ul, 
+.recipe-box ol {
+  margin-left: 1.25rem;
+}
+
+.recipe-box li {
+  margin-bottom: 0.4rem;
+}
+
+/* === Help Page Specific === */
+.help-hero {
+  width: 100%;
+  background-color: var(--sage);
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.help-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.help-hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Help Content */
+.help-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.faq-section h2,
+.contact-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  background-color: var(--cream);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-item:hover {
+  background-color: #f4f9f1;
+}
+
+.faq-question {
+  font-weight: 600;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #555;
+  display: none;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.contact-section a {
+  color: var(--sage);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .help-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .faq-item {
+    padding: 1.25rem;
+  }
+}
