@@ -6,7 +6,7 @@
 }
 
 
-/* === Global Styles === */
+/* Global Styles */
 :root {
   --sage: #A8C686;
   --terracotta: #D77A61;
@@ -32,7 +32,6 @@ body {
   line-height: 1.5;
 }
 
-/* === Header === */
 .header {
   width: 100%;
   background-color: var(--cream);
@@ -72,7 +71,6 @@ body {
   color: var(--charcoal);
 }
 
-/* === Logo Images === */
 .logo-img {
   height: 100px;
   width: auto;
@@ -89,7 +87,6 @@ body {
   transition: opacity 0.2s ease;
 }
 
-/* === Hero Section === */
 .hero {
   width: 100%;
   max-width: 1200px;
@@ -102,7 +99,6 @@ body {
   background-color: var(--light-gray);
 }
 
-/* === Intro Message === */
 .intro {
   width: 100%;
   max-width: 1200px;
@@ -113,7 +109,6 @@ body {
   color: var(--charcoal);
 }
 
-/* === Search + Filters === */
 .search-section {
   width: 100%;
   max-width: 1200px;
@@ -170,7 +165,6 @@ body {
   color: white;
 }
 
-/* === Recipe List === */
 .recipe-list {
   width: 100%;
   max-width: 1200px;
@@ -217,7 +211,6 @@ body {
   color: var(--charcoal);
 }
 
-/* === Help Button === */
 .help-btn {
   position: fixed;
   bottom: 80px;
@@ -234,7 +227,6 @@ body {
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-/* === Footer === */
 .footer {
   width: 100%;
   background-color: var(--cream);
@@ -244,7 +236,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* === Recipe Page Specific === */
+/* Recipe Page Specific */
 .recipe-header {
   width: 100%;
   max-width: 1200px;
@@ -308,7 +300,7 @@ body {
   margin-bottom: 0.4rem;
 }
 
-/* === Help Page Specific === */
+/* Help Page Specific */
 .help-hero {
   width: 100%;
   background-color: var(--sage);
@@ -327,7 +319,6 @@ body {
   opacity: 0.9;
 }
 
-/* Help Content */
 .help-content {
   width: 100%;
   max-width: 1200px;
@@ -365,7 +356,6 @@ body {
   display: none;
 }
 
-/* Contact Section */
 .contact-section {
   text-align: center;
   margin-top: 3rem;

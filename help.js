@@ -1,4 +1,4 @@
-// Simple toggle for FAQ expand/collapse (optional enhancement)
+// Simple toggle for FAQ expand & collapse
 document.querySelectorAll(".faq-item").forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("open");
