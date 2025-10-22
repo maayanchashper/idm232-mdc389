@@ -8,14 +8,27 @@
   <link rel="stylesheet" href="css/screen.css">
 </head>
 <body>
+
   <header class="header">
     <div class="nav-container">
-      <button class="menu-btn" aria-label="Menu">
+      <button class="menu-btn"
+              type="button"
+              aria-label="Menu"
+              aria-expanded="false"
+              aria-controls="primary-navigation">
         <span></span><span></span><span></span>
       </button>
-      <img src="nourish-logo1.png" alt="Nourish logo" class="logo-img" />
+
+      <a href="index.html">
+        <img src="nourish-logo1.png" alt="Nourish Logo" class="logo-img">
+      </a>
     </div>
   </header>
+
+  <nav id="primary-navigation" class="nav-menu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="help.html">Help</a>
+  </nav>
 
   <section class="help-hero">
     <h1>How Can We Help?</h1>
@@ -58,9 +71,12 @@
   </main>
 
   <footer class="footer">
-    <img src="nourish-logo1.png" alt="Nourish logo" class="footer-logo" />
+    <a href="index.html">
+      <img src="nourish-logo1.png" alt="Nourish Logo" class="footer-logo">
+    </a>
   </footer>
 
+  <script src="main.js"></script>
   <script src="help.js"></script>
 </body>
 </html>
