@@ -519,3 +519,94 @@ body {
   transform: scale(1.02);
   transition: transform 0.2s ease;
 }
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  z-index: 10;
+  margin-top: 8px;
+}
+
+/* Dropdown buttons */
+.dropdown-content button {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  border-radius: 8px;
+}
+
+.dropdown-content button:hover {
+  background-color: #d8e2c8; /* subtle sage hover */
+}
+
+/* Show dropdown on click (handled by JS) */
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+/* Filter buttons */
+.filter {
+  background-color: #c9d9b2; /* sage green */
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.filter:hover {
+  background-color: #b6c7a3;
+}
+
+/* Wider dropdown for the Sort menu */
+#sort-btn + .dropdown-content {
+  min-width: 160px; /* default is about 120px — increase for readability */
+}
+
+.search-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c9d9b2;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-icon-btn:hover {
+  background-color: #b6c7a3;
+  border-radius: 12px;
+}
+
+.search-icon-btn svg {
+  stroke: white;
+}
+
+.results-empty p {
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  line-height: 0;
+  text-align: center;
+  color: #555;
+}
